@@ -1,10 +1,5 @@
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">{{title}}</h1>
-    <p class="lead"></p>
-  </div>
-</div>
+
 <div class="alert alert-success" role="alert" *ngIf="status == true">
   Le projet a été créé correctement.
 </div>
@@ -14,6 +9,14 @@
 </div>
 
 <div class="card">
+    
+        <div class="jumbotron">
+            <div class="container">
+              <h1 class="display-4">{{title}}</h1>
+              <p class="lead"></p>
+            </div>
+        </div>
+    
   <div class="card-body">
     <form #projectForm = "ngForm" (ngSubmit)="onSubmit(projectForm)">
       <div class="form-group">
